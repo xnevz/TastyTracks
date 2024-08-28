@@ -4,5 +4,57 @@
 
 
 body {
+    font-family: Inter;
+    letter-spacing: 0.9px;
+}
 
+* {
+    /* border: 1px solid red; */
+}
+
+.header-nav {
+    li a {
+        @apply p-2 rounded-md;
+
+        &:hover {
+            @apply bg-violet-50;
+            transition: 0.3s background-color;
+        }
+    }
+}
+
+.servings-nav li {
+    position: relative;
+
+    &::after,
+    &::before {
+        @apply bg-blue-300;
+        content: '';
+        width: 50px;
+        height: 50px;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        position: absolute;
+        border-radius: 100%;
+        opacity: 0;
+        z-index: -1;
+        transition: 0.3s all;
+    }
+
+    &:hover {
+
+        &::before {
+            @apply bg-violet-300;
+            top: 70%;
+            opacity: 0.3;
+            left: 70%;
+        }
+
+        &::after {
+            opacity: 0.3;
+            top: 30%;
+            left: 30%;
+        }
+    }
 }
