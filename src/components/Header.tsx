@@ -6,7 +6,7 @@ import { Button } from 'antd';
 
 export default function Header() {
     return (
-        <header className='p-4 items-center border-b-[1px] flex'>
+        <header className='bg-white z-10 sticky top-0 p-4 items-center border-b-[1px] flex'>
             {/* logo */}
             <Logo />
 

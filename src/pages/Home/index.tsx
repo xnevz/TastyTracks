@@ -112,7 +112,7 @@ export default function Home() {
 
 
             <section className='bg-gray-100 text-center p-5'>
-                <h1 className='text-4xl font-bold'>What Our Customers Say</h1>
+                <h1 id="testimonials" className='text-4xl font-bold'>What Our Customers Say</h1>
                 <sub className='text-xl text-gray-400'>Hear from our satisfied diners.</sub>
                 <div className="flex flex-wrap gap-5 p-10 items-center justify-center">
                     {testimonials.map(testimonial => (
